@@ -1,0 +1,115 @@
+a { text-decoration: none; }
+
+#calendar {
+	padding: 0 5vw 0 5vw;
+}
+
+.calnav {
+	text-align:center;
+	font-size:24px;
+	margin-bottom: 55px;
+	}
+
+.calact {
+	display: inline;
+	text-align:center;
+	margin-bottom: 1rem;
+	position:fixed; 
+	left: 50%;
+	top: 45px;
+    transform: translate(-50%, 0);
+}
+
+.calact button {
+	font-size: 1rem;
+	margin-bottom: 5px;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	border-radius: 15%;
+	box-shadow: 3px 3px 15px gray;
+	color: black;
+	cursor:default;
+}
+
+.calact button:hover {
+	background-color: #fe7008;
+}
+
+#clearlink, #booklink, #now {
+	display: none;
+}
+
+.month .header:nth-child(7), .year .header:nth-child(7) {
+	color: red;
+}
+
+.year { text-align: center; }
+
+.year .calmonth {
+	background-color: white;
+	display:inline-block;
+	text-align:center;
+	margin: 7px;
+	vertical-align: top;
+	border: 1px solid gray;
+	padding: 10px;
+	border-radius: 15%;
+	box-shadow: 3px 5px 5px rgba(9,9,9,0.1);
+}
+
+.year table {
+	width: 100%;
+	text-align: left;
+	font-size: 12px;
+}
+
+.year caption {
+	margin-bottom: .5rem;
+}
+
+.year table td, .year table th {
+    width: 20px;
+	text-align:center;
+	border-radius: 40%;
+}
+
+.month {
+	background-color: white;
+	padding: 15px 15px 15px 15px;
+	text-align:center;
+}
+
+.month table { 
+	border-collapse: separate;
+	width: 100%;
+	max-width: 600px;
+	margin-left:auto; 
+    margin-right:auto;
+}	
+
+.month caption {
+	display: none;
+}
+
+.month .header {
+	padding-bottom: .5rem;
+}
+	
+.month table td,.month table tr {
+	border-radius: 20%;
+	border:1px solid #dee2e6;
+	padding: 3.5vmin .5vmin 3.5vmin .5vmin;
+}
+
+.month td.nb {
+	border:0;
+}
+
+.today {background: #fe7008}
+.day {background: white;}
+.arrive {background: lightgreen;}
+.leave {background: tomato;}
+#arrive {background: lightgreen;}
+#leave {background: tomato;}
+.stay {background: cyan;}
